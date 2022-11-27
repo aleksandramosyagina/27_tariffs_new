@@ -11,7 +11,6 @@ function Tariffs(props) {
             <div className={style.price}>руб {props.price} /мес</div>
             <div className={style.speed}>до {props.speed} Мбит/сек</div>
             <div className={style.info}>{props.info}</div>
-            <div className={style.title_color}>111</div>
         </div>
     );
 }
