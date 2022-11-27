@@ -1,17 +1,17 @@
-import '../Tariffs/tariffs.module.css';
+import style from '../Tariffs/tariffs.module.css';
+// import CSSModules from 'react-css-modules';
+import '../Tariffs/tariff.css';
 
-const style={backgroundColor: 'red', 
-width: 200, 
-height: 50,
-fontSize: '1.5em'
-};
 function Tariffs(props) {
+    // let planClass = classNames(style.plan, )
+    // const selectedCard = (isSelected?"selected":"")
     return (
-        <div className="plan-card">
-            <div className="name" style={ style }>{props.name}</div>
-            <div className="price">{props.price}</div>
-            <div className="speed">{props.speed}</div>
-            <div className="info">{props.info}</div>
+        <div className={style.App} >
+            <div className={style.name}>{props.name}</div>
+            <div className={style.price}>руб {props.price} /мес</div>
+            <div className={style.speed}>до {props.speed} Мбит/сек</div>
+            <div className={style.info}>{props.info}</div>
+            <div className={style.title_color}>111</div>
         </div>
     );
 }
