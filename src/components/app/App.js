@@ -11,11 +11,10 @@ class App extends React.Component {
     return (
       <div className={styles.App}>
         {
-          data.map((plan, index) =>
+          data.map((plan) =>
             <Tariffs
-            color={color[index]}
-            title_color={title_color[index]}
-            key={index}
+            color={plan.color}
+            title_color={plan.title_color}
             isSelected={plan.isSelected}
               name={plan.name}
               price={plan.price}
